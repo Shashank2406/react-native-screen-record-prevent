@@ -1,0 +1,26 @@
+{
+  "name": "react-native-screen-record-prevent",
+  "version": "1.0.0",
+  "description": "## Getting started",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Shashank, Rohan",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shashank2406/react-native-screen-record-prevent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shashank2406/react-native-screen-record-prevent/issues"
+  },
+  "homepage": "https://github.com/Shashank2406/react-native-screen-record-prevent#readme"
+}
