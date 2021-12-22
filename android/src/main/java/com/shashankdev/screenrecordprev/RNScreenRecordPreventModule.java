@@ -19,7 +19,7 @@ public class RNScreenRecordPreventModule extends ReactContextBaseJavaModule {
 
   @Override
   public String getName() {
-    return "RNScreenRecordPreventModule";
+    return "RNScreenRecordPrevent";
   }
 
   @ReactMethod
