@@ -47,7 +47,7 @@ RNScreenRecordPrevent.enabled(true/false);
 #### For iOS - You can get a screen recording event from here and then make your own view controller.
 ```javascript
   const iosNativeEvent = new NativeEventEmitter(RNScreenRecordPrevent);
-  iosNativeEvent.addListener('ScreenRecodingEvent', data => console.log(data));
+  iosNativeEvent.addListener('ScreenRecordingEvent', data => console.log(data));
 ```
 
 >Note - On iOS, we can't stop screen recording as we can on Android. For this, you'll need to add your own view controller. You can prevent screen recording by adding a view with a black backdrop over your video player when 'ScreenRecodingEvent' returns true.
