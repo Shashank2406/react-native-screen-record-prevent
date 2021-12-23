@@ -1,7 +1,7 @@
 {
   "name": "react-native-screen-record-prevent",
-  "version": "1.0.1",
-  "description": "## Getting started",
+  "version": "1.0.2",
+  "description": "React Native Screen Record Event Trigger iOS and Android",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {

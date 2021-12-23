@@ -59,6 +59,19 @@ RCT_EXPORT_METHOD(enabled:(BOOL) _enable) {
     self->enabled = _enable;
 }
 
+RCT_REMAP_METHOD(checkRecordingStatus, resolver: (RCTPromiseResolveBlock)resolve
+     rejecter:(RCTPromiseRejectBlock)reject)
+{
+  if( self->enabled ) {
+      BOOL isCaptured = [[UIScreen mainScreen] isCaptured];
+      if(isCaptured){
+          resolve(@{@"status": [NSNumber numberWithBool:isCaptured]});
+      }
+      resolve(@{@"status": [NSNumber numberWithBool:false]});
+  } else {
+      resolve(@{@"status": [NSNumber numberWithBool:false]});
+  }
+}
 
 
 @end

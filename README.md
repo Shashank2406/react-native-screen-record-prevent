@@ -50,5 +50,12 @@ RNScreenRecordPrevent.enabled(true/false);
   iosNativeEvent.addListener('ScreenRecordingEvent', data => console.log(data));
 ```
 
+#### For iOS - You can get a check screen recording is active or not
+```javascript
+  RNScreenRecordPrevent.checkRecordingStatus().then(value => {
+    console.log(value);
+  });
+```
+
 >Note - On iOS, we can't stop screen recording as we can on Android. For this, you'll need to add your own view controller. You can prevent screen recording by adding a view with a black backdrop over your video player when 'ScreenRecodingEvent' returns true.
 
