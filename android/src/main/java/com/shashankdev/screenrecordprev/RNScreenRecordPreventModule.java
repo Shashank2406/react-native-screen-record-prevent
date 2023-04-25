@@ -1,5 +1,5 @@
 
-package com.shashankdev.screenrecordprev;
+package com.videoready.screenrecordprev;
 
 import android.view.WindowManager;
 

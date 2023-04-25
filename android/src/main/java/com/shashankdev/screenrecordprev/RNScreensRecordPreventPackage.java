@@ -1,5 +1,5 @@
 
-package com.shashankdev.screenrecordprev;
+package com.videoready.screenrecordprev;
 
 import java.util.Arrays;
 import java.util.Collections;
