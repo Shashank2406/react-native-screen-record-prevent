@@ -32,15 +32,15 @@ public class RNScreenRecordPreventModule extends ReactContextBaseJavaModule {
         }
       });
     } else {
-      if(this.reactContext.getCurrentActivity()){
-        try{
+      if (this.reactContext.getCurrentActivity() != null) {
+        try {
           this.reactContext.getCurrentActivity().runOnUiThread(new Runnable() {
             @Override
-            public void run(){
+            public void run() {
               reactContext.getCurrentActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE);
             }
           });
-        }catch (Exception error){
+        } catch (Exception error) {
           //ignore.
         }
       }
